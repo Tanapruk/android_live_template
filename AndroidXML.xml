@@ -1,0 +1,21 @@
+<templateSet group="AndroidXML">
+  <template name="aisid" value="android:id=&quot;@+id/my_ais_tab_$module_name$_$view_short_hand$_$description$&quot;" description="name id for ais android" toReformat="false" toShortenFQNames="true">
+    <variable name="module_name" expression="enum(&quot;promotion&quot;,&quot;payment&quot;,&quot;main&quot;,&quot;service&quot;)" defaultValue="&quot;promotion&quot;" alwaysStopAt="true" />
+    <variable name="view_short_hand" expression="enum(&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="&quot;tv&quot;" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="&quot;description&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="linear" value="&lt;LinearLayout&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:orientation=&quot;$orientation$&quot;&gt;$end$&lt;/LinearLayout&gt;" description="Add LinearLayout xml" toReformat="false" toShortenFQNames="true">
+    <variable name="orientation" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

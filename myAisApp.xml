@@ -1,0 +1,43 @@
+<templateSet group="myAisApp">
+  <template name="showloading" value="AisDialog.getInstance().showLoadingDialog($fragment$);" toReformat="false" toShortenFQNames="true">
+    <variable name="fragment" expression="variableOfType(SupportFragmentManager())" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="getmobile" value="Mobile.getInstance().$method$" toReformat="false" toShortenFQNames="true">
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="dismiss" value="AisDialog.getInstance().dismissDialog();" description="dismiss AisDialog" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="rxregis" value="com.hwangjr.rxbus.RxBus.get().register(this);" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="rxunregis" value="com.hwangjr.rxbus.RxBus.get().unregister(this);" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSON" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="AisTextView" value=" &lt;com.nextzy.myais.common.widget.AISTextView&#10;        style=&quot;@style/AISTextView.Detail.$color$&quot;&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:gravity=&quot;center&quot;&#10;        tools:text=&quot;@string/loading&quot;&#10;        /&gt;" description="xml for AisTextView" toReformat="false" toShortenFQNames="true">
+    <variable name="color" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>
