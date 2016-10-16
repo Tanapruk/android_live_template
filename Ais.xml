@@ -1,0 +1,54 @@
+<templateSet group="Ais">
+  <template name="aisload" value="com.nextzy.myais.common.widget.dialog.AisDialog.getInstance().showLoadingDialog($fragment$);" description="show loading dialog" toReformat="false" toShortenFQNames="true">
+    <variable name="fragment" expression="enum(&quot;getFragmentManager()&quot;,&quot;getSupportFragmentManager()&quot;)" defaultValue="getFragmentManager()" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="Mobile" value="com.nextzy.myais.common.config.mobile.Mobile.getInstance().$method$" description="get Mobile Singleton" toReformat="false" toShortenFQNames="true">
+    <variable name="method" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="rxregis" value="com.hwangjr.rxbus.RxBus.get().register(this);" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="rxunregis" value="com.hwangjr.rxbus.RxBus.get().unregister(this);" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSON" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="AisTextView" value=" &lt;com.nextzy.myais.common.widget.AISTextView&#10;        style=&quot;@style/AISTextView.Detail.$color$&quot;&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:gravity=&quot;center&quot;&#10;        tools:text=&quot;@string/loading&quot;&#10;        /&gt;" description="xml for AisTextView" toReformat="false" toShortenFQNames="true">
+    <variable name="color" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aisid" value="android:id=&quot;@+id/my_ais_tab_$module_name$_$view_short_hand$_$description$&quot;" description="name id for ais android" toReformat="false" toShortenFQNames="true">
+    <variable name="module_name" expression="enum(&quot;promotion&quot;,&quot;payment&quot;,&quot;main&quot;,&quot;service&quot;)" defaultValue="&quot;promotion&quot;" alwaysStopAt="true" />
+    <variable name="view_short_hand" expression="enum(&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="&quot;tv&quot;" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="&quot;description&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aisdiss" value="com.nextzy.myais.common.widget.dialog.AisDialog.getInstance().dismissDialog($fragment$);" description="show loading dialog" toReformat="false" toShortenFQNames="true">
+    <variable name="fragment" expression="enum(&quot;getFragmentManager()&quot;,&quot;getSupportFragmentManager()&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+</templateSet>
