@@ -42,9 +42,17 @@
     </context>
   </template>
   <template name="idmain" value="android:id=&quot;@+id/promotion_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab main android" toReformat="true" toShortenFQNames="true">
-    <variable name="submodule" expression="enum(&quot;currentpackage&quot;,&quot;changepackage&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="view_short_hand" expression="enum(&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="description" expression="enum(&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="submodule" expression="enum(&quot;&quot;,&quot;currentpackage&quot;,&quot;changepackage&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="AisButton" value="     &lt;com.nextzy.myais.common.widget.AISButton&#10;            style=&quot;@style/AISButton.Green.$color$&quot;&#10;            android:layout_width=&quot;wrap_content&quot;&#10;            android:layout_height=&quot;wrap_content&quot;&#10;            android:text=&quot;@string/ok&quot;&#10;            /&gt;" description="xml for AisButton" toReformat="true" toShortenFQNames="true">
+    <variable name="color" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
