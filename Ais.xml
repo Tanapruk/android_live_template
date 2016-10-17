@@ -60,7 +60,7 @@
     </context>
   </template>
   <template name="idmain" value="android:id=&quot;@+id/main_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab main android" toReformat="true" toShortenFQNames="true">
-    <variable name="submodule" expression="enum(&quot;&quot;,&quot;home&quot;,&quot;cloudplus&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="submodule" expression="enum(&quot;&quot;,&quot;currentpackage&quot;,&quot;changepackage&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -70,7 +70,7 @@
     </context>
   </template>
   <template name="idservice" value="android:id=&quot;@+id/service_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab service android" toReformat="true" toShortenFQNames="true">
-    <variable name="submodule" expression="enum(&quot;&quot;,&quot;transfer&quot;,&quot;fibre&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="submodule" expression="enum(&quot;&quot;,&quot;currentpackage&quot;,&quot;changepackage&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -80,7 +80,7 @@
     </context>
   </template>
   <template name="idmyais" value="android:id=&quot;@+id/my_ais_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab my ais android" toReformat="true" toShortenFQNames="true">
-    <variable name="submodule" expression="enum(&quot;&quot;,&quot;login&quot;,&quot;regis&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="submodule" expression="enum(&quot;&quot;,&quot;currentpackage&quot;,&quot;changepackage&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -90,7 +90,7 @@
     </context>
   </template>
   <template name="idcommon" value="android:id=&quot;@+id/my_ais_library_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab my ais common android" toReformat="true" toShortenFQNames="true">
-    <variable name="submodule" expression="enum(&quot;&quot;,&quot;widget&quot;,&quot;textview&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="submodule" expression="enum(&quot;&quot;,&quot;currentpackage&quot;,&quot;changepackage&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -100,13 +100,22 @@
     </context>
   </template>
   <template name="idpayment" value="android:id=&quot;@+id/payment_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab my ais payment android" toReformat="true" toShortenFQNames="true">
-    <variable name="submodule" expression="enum(&quot;&quot;,&quot;payment&quot;,&quot;topup&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="submodule" expression="enum(&quot;&quot;,&quot;currentpackage&quot;,&quot;changepackage&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="service" value="public static final String SERVICE_NAME_$value$ = &quot;$value_in_lower_case$&quot;;" description="Service name" toReformat="true" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value_in_lower_case" expression="lowercaseAndDash(value)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
 </templateSet>
