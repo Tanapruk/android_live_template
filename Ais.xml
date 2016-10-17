@@ -41,7 +41,7 @@
       <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
-  <template name="idmain" value="android:id=&quot;@+id/promotion_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab main android" toReformat="true" toShortenFQNames="true">
+  <template name="idpromotion" value="android:id=&quot;@+id/promotion_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab promotion android" toReformat="true" toShortenFQNames="true">
     <variable name="submodule" expression="enum(&quot;&quot;,&quot;currentpackage&quot;,&quot;changepackage&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -51,8 +51,58 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
-  <template name="AisButton" value="     &lt;com.nextzy.myais.common.widget.AISButton&#10;            style=&quot;@style/AISButton.Green.$color$&quot;&#10;            android:layout_width=&quot;wrap_content&quot;&#10;            android:layout_height=&quot;wrap_content&quot;&#10;            android:text=&quot;@string/ok&quot;&#10;            /&gt;" description="xml for AisButton" toReformat="true" toShortenFQNames="true">
+  <template name="AisButton" value="     &lt;com.nextzy.myais.common.widget.AISButton&#10;            style=&quot;@style/AISButton.Green.$color$&quot;&#10;            android:layout_width=&quot;wrap_content&quot;&#10;            android:layout_height=&quot;wrap_content&quot;&#10;            tools:text=&quot;@string/ok&quot;&#10;            /&gt;" description="xml for AisButton" toReformat="true" toShortenFQNames="true">
     <variable name="color" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="idmain" value="android:id=&quot;@+id/main_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab main android" toReformat="true" toShortenFQNames="true">
+    <variable name="submodule" expression="enum(&quot;&quot;,&quot;home&quot;,&quot;cloudplus&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="idservice" value="android:id=&quot;@+id/service_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab service android" toReformat="true" toShortenFQNames="true">
+    <variable name="submodule" expression="enum(&quot;&quot;,&quot;transfer&quot;,&quot;fibre&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="idmyais" value="android:id=&quot;@+id/my_ais_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab my ais android" toReformat="true" toShortenFQNames="true">
+    <variable name="submodule" expression="enum(&quot;&quot;,&quot;login&quot;,&quot;regis&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="idcommon" value="android:id=&quot;@+id/my_ais_library_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab my ais common android" toReformat="true" toShortenFQNames="true">
+    <variable name="submodule" expression="enum(&quot;&quot;,&quot;widget&quot;,&quot;textview&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="idpayment" value="android:id=&quot;@+id/payment_$submodule$_$view_short_hand$_$description$&quot;" description="name id for ais tab my ais payment android" toReformat="true" toShortenFQNames="true">
+    <variable name="submodule" expression="enum(&quot;&quot;,&quot;payment&quot;,&quot;topup&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="view_short_hand" expression="enum(&quot;&quot;,&quot;tv&quot;,&quot;btn&quot;,&quot;layout&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="enum(&quot;&quot;,&quot;username&quot;,&quot;label&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
