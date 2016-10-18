@@ -118,4 +118,18 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="divhorizontalgray" value="&lt;com.nextzy.myais.common.widget.AISDivider style=&quot;@style/AISDivider.Horizontal.Gray&quot;/&gt;" description="Gray divider horizontal" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="divverticalgray" value="&lt;com.nextzy.myais.common.widget.AISDivider style=&quot;@style/AISDivider.Vertical.Gray&quot;/&gt;" description="Gray divider vertical" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
