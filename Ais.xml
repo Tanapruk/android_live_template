@@ -13,13 +13,13 @@
       <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
-  <template name="rxregis" value="com.hwangjr.rxbus.RxBus.get().register(this);" toReformat="true" toShortenFQNames="true">
+  <template name="rxregis" value="com.hwangjr.rxbus.RxBus.get().register(this);" description="register rx bus" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
-  <template name="rxunregis" value="com.hwangjr.rxbus.RxBus.get().unregister(this);" toReformat="true" toShortenFQNames="true">
+  <template name="rxunregis" value="com.hwangjr.rxbus.RxBus.get().unregister(this);" description="unregister rx bus" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JSON" value="false" />
       <option name="JAVA_STATEMENT" value="true" />
@@ -111,7 +111,7 @@
   </template>
   <template name="service" value="public static final String SERVICE_NAME_$value$ = &quot;$value_in_lower_case$&quot;;" description="Service name" toReformat="true" toShortenFQNames="true">
     <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="value_in_lower_case" expression="lowercaseAndDash(value)" defaultValue="" alwaysStopAt="true" />
+    <variable name="value_in_lower_case" expression="capitalizeAndUnderscore(value)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
       <option name="JAVA_EXPRESSION" value="false" />
@@ -130,6 +130,30 @@
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="rxpost" value="com.hwangjr.rxbus.RxBus.get().post(new $object$());" description="rx post" toReformat="true" toShortenFQNames="true">
+    <variable name="object" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="gson" value="new com.google.gson.GsonBuilder().setPrettyPrinting().create().fromJson($JSON_STRING$,$type$.class)" description="create Gson Object" toReformat="false" toShortenFQNames="true">
+    <variable name="JSON_STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="expectedType()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="gsonstring" value="new com.google.gson.GsonBuilder().setPrettyPrinting().create().toJson($JSON_STRING$)" description="gson to string" toReformat="false" toShortenFQNames="true">
+    <variable name="JSON_STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
     </context>
   </template>
 </templateSet>
