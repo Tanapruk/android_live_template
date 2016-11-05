@@ -1,0 +1,13 @@
+<templateSet group="Tip">
+  <template name="TipEditText" value="&lt;com.nextzy.tipapp.builderblock.widget.TipEditText&#10;android:id=&quot;@+id/et$clipboard$$id$&quot;&#10;style=&quot;@style/TipEditTextView.BlueTextGreyHint&quot;&#10;app:hintText=&quot;$hint_text$&quot;&#10;app:inputText=&quot;$input_text$&quot;&#10;/&gt;" description="init TipEditText xml" toReformat="true" toShortenFQNames="true">
+    <variable name="clipboard" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="hint_text" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="input_text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

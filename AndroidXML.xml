@@ -1,0 +1,48 @@
+<templateSet group="AndroidXML">
+  <template name="linear" value="&lt;LinearLayout&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:orientation=&quot;$orientation$&quot;&gt;$end$&lt;/LinearLayout&gt;" description="Add LinearLayout xml" toReformat="false" toShortenFQNames="true">
+    <variable name="orientation" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="live" value="LiveTemplate()" description="Live Templates" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+      <option name="JSON" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="c" value="true" />
+      <option name="OC_DECLARATION_C" value="true" />
+      <option name="OC_STATEMENT_C" value="true" />
+      <option name="OC_EXPRESSION_C" value="true" />
+      <option name="cpp" value="true" />
+      <option name="OC_DECLARATION_CPP" value="true" />
+      <option name="OC_STATEMENT_CPP" value="true" />
+      <option name="OC_EXPRESSION_CPP" value="true" />
+      <option name="KOTLIN" value="true" />
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+      <option name="KOTLIN_CLASS" value="true" />
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_COMMENT" value="true" />
+      <option name="KOTLIN_OBJECT_DECLARATION" value="true" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
